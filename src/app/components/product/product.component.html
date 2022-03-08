@@ -1,0 +1,12 @@
+   <div>
+    {{product.title}}
+    <img [src]="product.image" alt="" > 
+    {{product.price  | currency}}
+    </div>
+    <button (click)="AddCart()">Agregar carro</button>
+    <a [routerLink]="['/products', product.id]">Ver detalle</a>
+
+
+
+   
+  
